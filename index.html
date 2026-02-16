@@ -150,7 +150,7 @@
         .benefit-col { background: var(--gray-light); padding: 30px; border-radius: 10px; border-left: 5px solid var(--maroon); }
         .benefit-col h5 { font-size: 1.2rem; margin-bottom: 15px; color: var(--burgundy); }
 
-        /* --- FOUNDER SECTION (PREMIUM 3D) --- */
+        /* --- FOUNDER SECTION --- */
         .founder-section { background: #fff; position: relative; }
         .founder-grid { 
             display: flex; 
@@ -174,24 +174,11 @@
             background: #ffffff;
             border-radius: 15px;
             padding: 10px;
-            box-shadow: 
-                0 5px 15px rgba(0,0,0,0.05),
-                0 15px 35px rgba(0,0,0,0.1),
-                0 30px 60px -12px rgba(0,0,0,0.15);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             transition: var(--transition);
             transform-style: preserve-3d;
             margin-bottom: 30px;
             border: 1px solid rgba(0,0,0,0.03);
-        }
-
-        .founder-frame::after {
-            content: '';
-            position: absolute;
-            inset: 8px;
-            border: 1px solid var(--coklat-susu);
-            border-radius: 10px;
-            opacity: 0.3;
-            pointer-events: none;
         }
 
         .founder-image-container {
@@ -199,44 +186,24 @@
             height: 100%;
             border-radius: 8px;
             overflow: hidden;
-            background: #ffffff;
-            position: relative;
+            background: #f0f0f0;
         }
 
         .founder-image-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            filter: grayscale(10%) contrast(105%);
             transition: var(--transition);
         }
 
-        .img-putri {
-            object-position: center top;
-            transform: scale(1);
-        }
-
-        .img-olivia {
-            object-position: center top;
-            transform: scale(1);
-        }
-
         .founder-card:hover .founder-frame {
-            transform: translateY(-20px) rotateX(5deg) rotateY(-5deg);
-            box-shadow: 
-                0 20px 40px rgba(0,0,0,0.1),
-                0 40px 80px -20px rgba(0,0,0,0.25);
-        }
-
-        .founder-card:hover img {
-            filter: grayscale(0%) contrast(110%);
+            transform: translateY(-10px);
         }
 
         .founder-info h4 {
             font-size: 1.3rem;
             color: var(--burgundy);
             margin-bottom: 5px;
-            letter-spacing: -0.5px;
         }
 
         .founder-info span {
@@ -270,8 +237,8 @@
 
         /* --- TESTIMONI --- */
         .testi-container { max-width: 800px; margin: 0 auto; text-align: center; }
-        .testi-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s; }
-        .testi-img { width: 80px; height: 80px; border-radius: 50%; background: #ccc; margin: 0 auto 20px; overflow: hidden; }
+        .testi-card { background: white; padding: 40px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: opacity 0.3s; }
+        .testi-img { width: 100px; height: 100px; border-radius: 50%; background: #eee; margin: 0 auto 20px; overflow: hidden; border: 3px solid var(--coklat-susu); }
         .testi-img img { width: 100%; height: 100%; object-fit: cover; }
         .testi-text { font-style: italic; font-size: 1.1rem; margin-bottom: 20px; }
         .testi-author { font-weight: bold; color: var(--maroon); }
@@ -406,7 +373,7 @@
             <div class="founder-card">
                 <div class="founder-frame">
                     <div class="founder-image-container">
-                        <img src="kaira2%20JPG.JPG" alt="Putri Khairani Lubis" class="img-putri">
+                        <img src="kaira3%20JPG.jpeg" alt="Putri Khairani Lubis">
                     </div>
                 </div>
                 <div class="founder-info">
@@ -419,7 +386,7 @@
             <div class="founder-card">
                 <div class="founder-frame">
                     <div class="founder-image-container">
-                        <img src="PAS%20FOTO%20JPG.jpg" alt="Oliviani Salsabila" class="img-olivia">
+                        <img src="PAS%20FOTO%20JPG.jpg" alt="Oliviani Salsabila">
                     </div>
                 </div>
                 <div class="founder-info">
@@ -434,17 +401,21 @@
         </div>
     </section>
 
-    <!-- DOKUMENTASI -->
+    <!-- DOKUMENTASI (FOCUS GROUP DISCUSSION) -->
     <section id="dokumentasi">
-        <h3 class="section-title">Dokumentasi Kegiatan</h3>
+        <h3 class="section-title">Focus Group Discussion</h3>
         <div class="slider-wrapper">
             <div class="slider-container" id="slider">
                 <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1523240715181-01489be2e40b?auto=format&fit=crop&q=80&w=1000" alt="Kegiatan 1">
+                    <img src="pelajar%20korea.png" alt="Dokumentasi Pelajar Korea">
+                    <div class="slide-info">Diskusi Lintas Budaya - Analisis Isu Global</div>
+                </div>
+                <div class="slide">
+                    <img src="https://images.unsplash.com/photo-1523240715181-01489be2e40b?auto=format&fit=crop&q=80&w=1000" alt="Kegiatan Workshop">
                     <div class="slide-info">Workshop Literasi Kritis - SMA Negeri 1</div>
                 </div>
                 <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1000" alt="Kegiatan 2">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1000" alt="Debat Isu">
                     <div class="slide-info">Simulasi Debat Isu Publik - Pelajar Indonesia</div>
                 </div>
             </div>
@@ -461,9 +432,11 @@
         <div class="testi-container">
             <div id="testi-content">
                 <div class="testi-card">
-                    <div class="testi-img"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=100" alt="User"></div>
+                    <div class="testi-img">
+                        <img src="kepsek%20SMA%20Pancasila.png" alt="Bpk Rajih M.Pd">
+                    </div>
                     <p class="testi-text">"ThinkClass membantu siswa kami menyusun argumen yang lebih akademis."</p>
-                    <div class="testi-author">Bpk Rajih M.Pd - Kepala Sekolah SMA Pancasila</div>
+                    <div class="testi-author">Bpk Rajih M.Pd – Kepala Sekolah SMA Pancasila</div>
                 </div>
             </div>
             <button class="testi-btn" onclick="nextTesti()">Baca Testimoni Lainnya</button>
@@ -548,18 +521,29 @@
         }
 
         const testimonis = [
-            { text: "ThinkClass membantu siswa kami menyusun argumen yang lebih akademis.", author: "Bpk Rajih M.Pd - Kepala Sekolah SMA Pancasila" },
-            { text: "Acaranya sangat seru, tidak seperti belajar di kelas biasa.", author: "Rian - Siswa Kelas XI" }
+            { 
+                text: "ThinkClass membantu siswa kami menyusun argumen yang lebih akademis.", 
+                author: "Bpk Rajih M.Pd – Kepala Sekolah SMA Pancasila",
+                img: "kepsek%20SMA%20Pancasila.png"
+            },
+            { 
+                text: "Acaranya sangat seru, tidak seperti belajar di kelas biasa. Saya jadi lebih berani berpendapat.", 
+                author: "Rian – Siswa Kelas XI",
+                img: "Rian%20SMA.png"
+            }
         ];
 
-        let currentTesti = 0;
+        let currentTestiIndex = 0;
         function nextTesti() {
-            currentTesti = (currentTesti + 1) % testimonis.length;
-            const content = document.querySelector('.testi-card');
+            currentTestiIndex = (currentTestiIndex + 1) % testimonis.length;
+            const content = document.getElementById('testi-content');
             content.style.opacity = 0;
             setTimeout(() => {
-                content.querySelector('.testi-text').innerText = `"${testimonis[currentTesti].text}"`;
-                content.querySelector('.testi-author').innerText = testimonis[currentTesti].author;
+                const card = content.querySelector('.testi-card');
+                card.querySelector('.testi-img img').src = testimonis[currentTestiIndex].img;
+                card.querySelector('.testi-img img').alt = testimonis[currentTestiIndex].author;
+                card.querySelector('.testi-text').innerText = `"${testimonis[currentTestiIndex].text}"`;
+                card.querySelector('.testi-author').innerText = testimonis[currentTestiIndex].author;
                 content.style.opacity = 1;
             }, 300);
         }
